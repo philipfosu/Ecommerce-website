@@ -1,0 +1,17 @@
+.hero-section{
+    background-image: url('../images/2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    /* height: 30rem; */
+}
+.hero-text{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
