@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Azubi-project">
@@ -7,26 +7,46 @@
         <meta name="author" content="Ecommerce-website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ecommerce-website</title>
+        <script src="https://unpkg.com/feather-icons"></script>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500;600&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <section class="hero-section">
+        <section class="header">
+            <div class="overlay"></div>
+            <!-- this nav contain the logo and nav items -->
             <nav class="nav-bar">
-                <div class="logo"><img alt="TMART logo" src="./assets/images/"></div>
-                <div class="nav-details">
-                    <ul>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <div class="logo"><img alt="TMART logo" src="./assets/images/2 (1).webp"></div>
+                <!-- the nav list below only displays when its in desktop view  -->
+                <ul class="nav-details">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!-- this div contains the nav icons -->
+                <div class="nav-icons">
+                    <i data-feather="user"></i>
+                    <i data-feather="shopping-cart"></i>
+                    <i data-feather="menu"></i>
                 </div>
             </nav>
+            <!-- this div contains the headline text  -->
             <div class="hero-text">
-                <p>New Product Collection</p>
+                <div class="headline-content">
+                <h1>New Product Collection</h1>
                 <a href="#">Shop now</a>
+                </div>
             </div>
         </section>
 
+
+        <script>
+            feather.replace()
+          </script>
     </body>
 </html>
