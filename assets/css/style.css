@@ -1,6 +1,6 @@
 
 /* general styling for all content  */
-.{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .overlay{
     background-color: rgba(0,0,0,0.6);
@@ -72,7 +73,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: white; */
     list-style-type: none;
 }
 .nav-details li{
@@ -90,6 +90,163 @@ body{
     color: white;
     margin: 0.2rem;
 }
+/* style for message section  */
+.collection{
+    width: 93%;
+    margin: 53px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 20px;
+    
+}
+.container{
+    width: 100%;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.container img{
+    width: 100%; 
+}
+.container h1{
+    position: absolute;
+    color: rgba(0,0,0,0.6);
+    top:0;
+    width: 12rem;
+    text-align: center;
+}
+.container a{
+    position: absolute;
+    top: 95px;
+    left: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.product-item{
+    position: relative;
+    text-align: center;
+    color: rgba(255,255,255,0.78);
+}
+.product-item h2{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.product-item h3{
+    position: absolute;
+    top: 58%;
+    left: 45%;
+    /* text-align: center; */
+}
+.overlay-2{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:97%;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.product-item img {
+    width: 350px;
+}
+.recent-news{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 36px auto;
+    width: 93%;
+    color: black;
+    font-weight: 600;
+    row-gap: 36px;
+}
+.recent-news h1{
+    text-align: center;
+}
+.container-house{
+    display: flex;
+    row-gap: 19px;
+    flex-direction: column;
+}
+.news-container{
+    position: relative;
+}
+.news-container img{
+    width: 350px;
+    height: 350px;
+}
+.news{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+.news p{
+    margin-top: 45%;
+}
+.more{
+    margin-top: 4.3%;
+}
+.date{
+    width: 16%;
+    height: 16%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.date h4{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.date h5{
+    margin-top: 0;
+    text-transform: uppercase;
+    padding: 0;
+}
+.footer{
+    background-color: rgba(185, 179, 179, 0.78);
+    padding: 42px 12px 30px 20px;
+}
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 16.83px;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    margin: 28px auto 65px auto;
+}
+/* .input{
+    width: 287px;
+    height: 40px;
+} */
+.mail-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* .mail-input i{
+    width: 49px;
+    height: 40px;
+} */
+.newsletter{
+    display: flex;
+    justify-content: center;
+    row-gap: 19px;
+}
 /* media query to display nav menu  */
 @media only screen and ( min-width:900px) {
     .nav-details li {
@@ -102,7 +259,69 @@ body{
         color: white;
         text-decoration: none;
     }
-    .headline-content{
-
+    .products{
+        /* width: 100%; */
+        margin: 34px auto;
     }
+    .product-item img{
+        width: 280px;
+        height: 280px;
+    }
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 31px;
+        column-gap: 17px;
+        font-size: 12px;
+        margin: 34px 0px;
+    }
+    
+}
+@media only screen and (min-width:768px) {
+    .collection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .products{
+        width: 93%;
+        margin: 34px auto;
+    }
+    .product-item img{
+        width: 220px;
+        height: 220px;
+    }
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 31px;
+        column-gap: 17px;
+        font-size: 12px;
+        margin: 34px 0px;
+    }
+    .container-house{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 34px;
+    }
+    .news-container{
+        width: 330px;
+        height: 330px;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: row;
+        column-gap: 78px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+    
 }
