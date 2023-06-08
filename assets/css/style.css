@@ -138,7 +138,6 @@ body{
     position: absolute;
     top: 58%;
     left: 45%;
-    /* text-align: center; */
 }
 .overlay-2{
     background-color: rgba(0,0,0,0.4);
@@ -213,6 +212,8 @@ body{
     text-transform: uppercase;
     padding: 0;
 }
+
+/* styling for the footer  */
 .footer{
     background-color: rgba(185, 179, 179, 0.78);
     padding: 42px 12px 30px 20px;
@@ -228,26 +229,44 @@ body{
     row-gap: 14px;
     margin: 28px auto 65px auto;
 }
-/* .input{
-    width: 287px;
-    height: 40px;
-} */
 .mail-input{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
-/* .mail-input i{
+.input{
+    width: 287px;
+    height: 40px;
+    font-size: small; 
+    padding-left: 5px;
+}
+.icon-div{
     width: 49px;
     height: 40px;
-} */
+    background-color: rgba(90, 85, 85,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .newsletter{
     display: flex;
     justify-content: center;
+    align-items: center;
     row-gap: 19px;
+    flex-direction: column;
+} 
+.copyright{
+    margin-top: 43.02px;
+    margin-bottom: 30px;
 }
-/* media query to display nav menu  */
+hr{
+    margin-bottom: 21.98px;
+    height: 2px;
+    color: black;
+}
+/* styling for desktop screens  */
 @media only screen and ( min-width:900px) {
     .nav-details li {
         display: block;
@@ -260,7 +279,6 @@ body{
         text-decoration: none;
     }
     .products{
-        /* width: 100%; */
         margin: 34px auto;
     }
     .product-item img{
@@ -276,8 +294,27 @@ body{
         font-size: 12px;
         margin: 34px 0px;
     }
+    .container-footer{
+        display: flex;
+        flex-direction: row;
+        column-gap: 78px;
+        width: 100%;
+        padding-left: 119px;
+    }
+    .contact-us{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .footer img{
+        margin-left: 119px;
+    }
+    .copyright{
+        margin-left: 119px;
+    }
+    
     
 }
+/* styling for tablet screen  */
 @media only screen and (min-width:768px) {
     .collection {
         display: flex;
@@ -315,12 +352,24 @@ body{
     .container-footer{
         display: flex;
         flex-direction: row;
-        column-gap: 78px;
-        justify-content: center;
-        align-items: center;
+        column-gap: 38px;
         width: 100%;
-        margin: auto;
+        padding-left: 36.5px;
     }
+    .contact-us{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .footer img{
+        margin-left: 36.5px;
+    }
+    .copyright{
+        margin-left: 36.5px;
+    }
+    .footer{
+        width: 100%;
+    }
+   
     
     
     
